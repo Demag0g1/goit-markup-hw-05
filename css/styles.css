@@ -122,6 +122,10 @@ ul {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .contacts {
   display: flex;
   align-items: center;
@@ -150,28 +154,21 @@ ul {
   flex-direction: row-reverse;
 }
 
-.envelope {
-  margin-right: 10px;
-}
-
+.envelope,
 .telephone {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .phone {
   display: flex;
   align-items: center;
   fill: currentColor;
-  flex-direction: row-reverse;
 }
 
 .contacts :focus,
 .contacts :hover {
-  cursor: pointer;
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .contacts .item+.item {
@@ -352,44 +349,29 @@ h1 {
   margin-top: 16px;
   display: flex;
   justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.social-list {
+  width: 44px;
+  height: 44px;
 }
 
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  fill: #afb1b8;
   width: 44px;
   height: 44px;
-  cursor: pointer;
   border-radius: 50%;
-  fill: var(--text-color);
-}
-
-.social-link:last-child {
-  margin-right: 0;
-}
-
-.social-link-icon {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 20px;
-  height: 20px;
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--bg-color);
-}
-
-.clients {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--nav-color);
 }
 
 .partners {
@@ -412,7 +394,7 @@ h1 {
   margin-top: 50px;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--text-color);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
