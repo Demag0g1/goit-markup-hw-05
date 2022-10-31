@@ -37,18 +37,19 @@
             </nav>
             <ul class="contacts">
                 <li class="item">
-                    <svg class="envelope" width="16" height="12">
-                        <use href="././images/icon.svg#icon-envelope"></use>
-                    </svg>
                     <a class="address" href="mailto:info@devstudio.com">
                         info@devstudio.com
+                        <svg class="envelope" width="16" height="12">
+                            <use href="././images/icon.svg#icon-envelope"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <svg class="telephone" width="10" height="16">
-                        <use href="././images/icon.svg#icon-telephone"></use>
-                    </svg>
-                    <a class="phone" href="tel:+380961111111">+38 096 111 11 11 </a>
+                    <a class="phone" href="tel:+380961111111">+38 096 111 11 11
+                        <svg class="telephone" width="10" height="16">
+                            <use href="././images/icon.svg#icon-telephone"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -57,17 +58,9 @@
         <section class="section hero">
             <div class="conteiner">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button data-modal-open type="button" class="btn">Замовити послугу</button>
-            </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="button" data-modal-close>
-                        <svg width="30px" height="30px">
-                            <use href="././images/icon.svg#icon-close"></use>
-                        </svg>
-                    </button>
-
-                </div>
+                <button data-modal-open type="button" class="btn">
+                    Замовити послугу
+                </button>
             </div>
         </section>
         <section class="section">
@@ -388,7 +381,7 @@
                                     <use href="././images/icon.svg#icon-facebook"></use>
                                 </svg></a>
                         </li>
-                        <li class="social-link">
+                        <li class="social-list">
                             <a class="social-link" href="https://ua.linkedin.com/">
                                 <svg width="20" height="20">
                                     <use href="././images/icon.svg#icon-linkedin"></use>
@@ -399,6 +392,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="button" data-modal-close>
+                <svg width="30px" height="30px">
+                    <use href="././images/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 
